@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>FurryCon 2026 - Stay Fluffy!</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Pacifico&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="lala.css">
+</head>
+<body class="bg-[#fff8f7] font-['Comfortaa',_cursive] text-[#281717] selection:bg-[#C4FF4D]">
+
+    <nav class="bg-white/90 backdrop-blur-xl sticky top-0 z-50 border-b-4 border-[#C4FF4D]">
+        <div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+            <div class="flex items-center gap-3">
+                <img src="https://static.wixstatic.com/media/16a096_c07589411f93490abb25b252b7454021~mv2.png/v1/fill/w_2500,h_1266,al_c/16a096_c07589411f93490abb25b252b7454021~mv2.png" class="h-8 rounded-sm" alt="Furry Flag">
+                <span class="text-2xl font-bold text-[#bb001d] font-['Comfortaa'] tracking-tight">FurryCon 2026</span>
+            </div>
+            <div class="hidden md:flex items-center gap-6">
+                <button onclick="openModal('modal-performance')" class="bg-[#92407e] text-white px-5 py-2 rounded-full chunky-button font-bold text-sm hover:bg-[#7a3268] transition-colors">Performance</button>
+                <button onclick="openModal('modal-art')" class="bg-[#008190] text-white px-5 py-2 rounded-full chunky-button font-bold text-sm hover:bg-[#006975] transition-colors">Art Track</button>
+                <button onclick="openModal('modal-gaming')" class="bg-[#ff9f1c] text-white px-5 py-2 rounded-full chunky-button font-bold text-sm hover:bg-[#e08500] transition-colors">Gaming</button>
+            </div>
+            <button onclick="openModal('modal-tickets')" class="bg-[#bb001d] text-white px-6 py-2.5 rounded-full chunky-button font-bold text-sm tracking-wide hover:bg-[#990014] transition-colors">БИЛЕТЫ</button>
+        </div>
+    </nav>
+
+    <header class="relative min-h-[75vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#ffe5e8] via-[#fff0f2] to-[#f0ebff]">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 fuzzy-texture"></div>
+        </div>
+        
+        <div class="relative z-10 text-center space-y-6 px-4 max-w-5xl">
+            <div class="inline-block px-4 py-1.5 bg-[#C4FF4D] text-black font-bold rounded-full text-xs mb-2 shadow-sm animate-pulse">
+                ГЛАВНОЕ СОБЫТИЕ ЛЕТА 🐾
+            </div>
+            <h1 class="text-6xl md:text-9xl font-normal text-[#bb001d] font-['Pacifico',_cursive] leading-tight drop-shadow-sm">Stay Fluffy!</h1>
+            <p class="text-xl md:text-2xl text-[#92407e] font-bold">Tallinn, Estonia • 18-19 july 2026</p>
+            
+            <div class="flex flex-wrap justify-center gap-6 pt-8">
+                <div class="relative">
+                    <img src="https://i.pinimg.com/736x/c5/ad/cd/c5adcd225e2c2e4a83e49e8f964b8d1e.jpg" class="h-44 w-44 object-cover rounded-3xl border-4 border-white shadow-xl" alt="Fursuit 1">
+                </div>
+                <div class="relative">
+                    <img src="https://i.pinimg.com/736x/83/56/48/8356489c0525a56b997256b5ee8c5aee.jpg" class="h-44 w-44 object-cover rounded-3xl border-4 border-white shadow-xl" alt="Fursuit 2">
+                </div>
+                <div class="relative">
+                    <img src="https://i.pinimg.com/736x/51/69/8b/51698bbc5461a86847037a4f600bc7dd.jpg" class="h-44 w-44 object-cover rounded-3xl border-4 border-white shadow-xl" alt="Fursuit 3">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-4xl font-bold text-[#bb001d] tracking-tight">Место встречи</h2>
+                <p class="text-base text-gray-700 leading-relaxed">Фестиваль пройдет в самом сердце творческого Таллина — <b class="text-black">Kultuurikatel</b>. Огромные индустриальные залы станут домом для сотен пушистых гостей, наполненных теплом и весельем.</p>
+                <div class="p-6 bg-[#fff8f7] rounded-3xl border-2 border-[#E6D5FF] space-y-4">
+                    <div class="flex items-center gap-4">
+                        <span class="material-symbols-outlined text-[#92407e] p-2 bg-[#E6D5FF]/50 rounded-xl">location_on</span>
+                        <div>
+                            <p class="font-bold text-lg">Põhja pst 27a, 10415 Tallinn</p>
+                            <p class="text-sm text-gray-500">Эстония, Таллин</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[380px] rounded-3xl overflow-hidden shadow-xl border-4 border-[#E6D5FF]">
+                <iframe src="https://maps.google.com/maps?q=Kultuurikatel,Tallinn&t=&z=15&ie=UTF8&iwloc=&output=embed" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 max-w-5xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12 tracking-tight">Программа событий</h2>
+        <div class="grid gap-8">
+            <div class="schedule-card bg-white rounded-3xl shadow-md border-l-8 border-[#92407e] overflow-hidden">
+                <div class="p-6 bg-[#92407e]/5 flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-[#92407e]">18 Апреля (Суббота)</h3>
+                    <button onclick="openModal('modal-performance')" class="flex items-center gap-1.5 bg-[#92407e] text-white px-4 py-1.5 rounded-full font-bold text-xs chunky-button hover:bg-[#7a3268] transition-colors">
+                        Подробнее <span class="material-symbols-outlined text-sm">info</span>
+                    </button>
+                </div>
+                <div class="p-6 space-y-4 text-sm md:text-base">
+                    <div class="flex gap-6"><span class="font-bold text-[#bb001d] w-16 shrink-0">10:00</span><span class="text-gray-700">Открытие дверей и регистрация гостей</span></div>
+                    <div class="flex gap-6"><span class="font-bold text-[#bb001d] w-16 shrink-0">13:00</span><span class="text-gray-800"><b>Performance Show</b> — Танцы и сценки на главной сцене</span></div>
+                    <div class="flex gap-6"><span class="font-bold text-[#bb001d] w-16 shrink-0">16:00</span><span class="text-gray-700">Лекция и воркшоп по созданию ушек и фурсьютов</span></div>
+                </div>
+            </div>
+            <div class="schedule-card bg-white rounded-3xl shadow-md border-l-8 border-[#ff9f1c] overflow-hidden">
+                <div class="p-6 bg-[#ff9f1c]/5 flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-[#ff9f1c]">19 Апреля (Воскресенье)</h3>
+                    <button onclick="openModal('modal-gaming')" class="flex items-center gap-1.5 bg-[#ff9f1c] text-white px-4 py-1.5 rounded-full font-bold text-xs chunky-button hover:bg-[#e08500] transition-colors">
+                        Подробнее <span class="material-symbols-outlined text-sm">info</span>
+                    </button>
+                </div>
+                <div class="p-6 space-y-4 text-sm md:text-base">
+                    <div class="flex gap-6"><span class="font-bold text-[#bb001d] w-16 shrink-0">11:00</span><span class="text-gray-700">Общий уличный парад Fursuit Walk</span></div>
+                    <div class="flex gap-6"><span class="font-bold text-[#bb001d] w-16 shrink-0">15:00</span><span class="text-gray-800">Финал игровых турниров в <b>Gaming Zone</b></span></div>
+                    <div class="flex gap-6"><span class="font-bold text-[#bb001d] w-16 shrink-0">18:00</span><span class="text-gray-700">Церемония закрытия и награждение авторов</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t-2 border-gray-100 py-8 text-center text-sm text-gray-500">
+        <p>© FurryCon 2026. С любовью и пушистостью 🐾</p>
+    </footer>
+
+    <div id="modal-performance" class="modal">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeModal('modal-performance')"></div>
+        <div class="relative bg-white rounded-3xl w-full max-w-2xl p-8 shadow-2xl max-h-[90vh] overflow-y-auto z-10 border-t-8 border-[#92407e]">
+            <button onclick="closeModal('modal-performance')" class="absolute top-5 right-5 text-gray-400 hover:text-black transition-colors">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <h2 class="text-3xl font-bold text-[#92407e] mb-2">Performance Application</h2>
+            <p class="text-gray-600 mb-6 text-sm">Подай заявку на сцену! Мы ждем твой танец, песню или пушистый перформанс.</p>
+            <form class="space-y-4 text-sm" onsubmit="event.preventDefault(); alert('Мяу! Твоя заявка отправлена!'); closeModal('modal-performance');">
+                <div>
+                    <label class="block font-bold mb-1">Твой Никнейм</label>
+                    <input type="text" placeholder="Например: FluffyPaw" class="w-full p-3.5 border-2 border-gray-100 rounded-2xl outline-none focus:border-[#92407e] transition-colors" required>
+                </div>
+                <div>
+                    <label class="block font-bold mb-1">Формат номера</label>
+                    <select class="w-full p-3.5 border-2 border-gray-100 rounded-2xl outline-none focus:border-[#92407e] transition-colors">
+                        <option>Одиночный танец в фурсьюте</option>
+                        <option>Групповое выступление</option>
+                        <option>Песня / Музыкальный трек</option>
+                        <option>Сценка / Скетч</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-bold mb-1">Ссылка на трек (Google Drive / Слауд)</label>
+                    <input type="url" placeholder="https://drive.google.com/..." class="w-full p-3.5 border-2 border-gray-100 rounded-2xl outline-none focus:border-[#92407e] transition-colors" required>
+                </div>
+                <button type="submit" class="w-full bg-[#92407e] text-white font-bold py-4 rounded-2xl chunky-button text-base mt-2 hover:bg-[#7a3268] transition-colors">ОТПРАВИТЬ АНКЕТУ 🐾</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal-gaming" class="modal">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeModal('modal-gaming')"></div>
+        <div class="relative bg-white rounded-3xl w-full max-w-2xl p-8 shadow-2xl z-10 border-t-8 border-[#ff9f1c]">
+            <button onclick="closeModal('modal-gaming')" class="absolute top-5 right-5 text-gray-400 hover:text-black transition-colors">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <h2 class="text-3xl font-bold mb-2 text-[#ff9f1c]">Gaming Zone 🎮</h2>
+            <p class="text-[#bb001d] font-bold mb-6 text-sm uppercase tracking-wider">Локация: Energia Avastuskeskus (2 этаж)</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 text-sm">
+                <div class="p-4 bg-[#fff8f7] rounded-2xl border-2 border-gray-50">
+                    <h4 class="font-bold text-[#bb001d] mb-1">Beat Saber Hub</h4>
+                    <p class="text-gray-600 text-xs">Музыкальные кубы в очках виртуальной реальности.</p>
+                </div>
+                <div class="p-4 bg-[#fff8f7] rounded-2xl border-2 border-gray-50">
+                    <h4 class="font-bold text-[#bb001d] mb-1">Retro Corner</h4>
+                    <p class="text-gray-600 text-xs">Старые добрые игры на Sega, Dendy и аркадных автоматах.</p>
+                </div>
+                <div class="p-4 bg-[#fff8f7] rounded-2xl border-2 border-gray-50">
+                    <h4 class="font-bold text-[#bb001d] mb-1">Console Fighting Arena</h4>
+                    <p class="text-gray-600 text-xs">Турниры на больших экранах: Tekken 8 и Smash Bros.</p>
+                </div>
+                <div class="p-4 bg-[#fff8f7] rounded-2xl border-2 border-gray-50">
+                    <h4 class="font-bold text-[#bb001d] mb-1">Just Dance Stage</h4>
+                    <p class="text-gray-600 text-xs">Танцуй под любимые треки вместе со всеми!</p>
+                </div>
+            </div>
+            <button onclick="closeModal('modal-gaming')" class="w-full bg-[#ff9f1c] text-white font-bold py-4 rounded-2xl chunky-button text-base hover:bg-[#e08500] transition-colors">ПОНЯТНО, ИДУ ИГРАТЬ!</button>
+        </div>
+    </div>
+
+    <div id="modal-art" class="modal">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeModal('modal-art')"></div>
+        <div class="relative bg-white rounded-3xl w-full max-w-xl p-8 shadow-2xl z-10 border-t-8 border-[#008190]">
+            <button onclick="closeModal('modal-art')" class="absolute top-5 right-5 text-gray-400 hover:text-black transition-colors">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <h2 class="text-3xl font-bold text-[#008190] mb-4">Art Track 🎨</h2>
+            <div class="space-y-4 text-sm text-gray-700 mb-6">
+                <p>Творческое пространство для художников, крафтеров и создателей мерча:</p>
+                <ul class="space-y-2.5">
+                    <li class="flex gap-2">⭐ <b>Artists' Alley:</b>  Аллея авторов с крутыми открытками, значками и крафтом.</li>
+                    <li class="flex gap-2">🖋️ <b>Мастер-классы:</b> Рисование персонажей, секреты покраски меха и основы анатомии.</li>
+                    <li class="flex gap-2">🖼️ <b>Art Gallery:</b> Выставка масштабных работ наших гостей.</li>
+                </ul>
+            </div>
+            <button onclick="closeModal('modal-art')" class="w-full bg-[#008190] text-white font-bold py-4 rounded-2xl chunky-button text-base hover:bg-[#006975] transition-colors">ХОЧУ ТУДА!</button>
+        </div>
+    </div>
+
+    <div id="modal-tickets" class="modal">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeModal('modal-tickets')"></div>
+        <div class="relative bg-white rounded-3xl w-full max-w-md p-8 shadow-2xl z-10 text-center border-t-8 border-[#bb001d]">
+            <button onclick="closeModal('modal-tickets')" class="absolute top-5 right-5 text-gray-400 hover:text-black transition-colors">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <h2 class="text-3xl font-bold text-[#bb001d] mb-2">Выбери оплату</h2>
+            <p class="text-gray-500 text-sm mb-6">В стоимость входит проход на 2 дня феста</p>
+            <div class="space-y-3 text-sm">
+                <button onclick="nextStep('modal-tickets', 'modal-payment-form')" class="w-full flex items-center justify-between p-4 border-2 border-gray-150 rounded-2xl hover:border-[#C4FF4D] hover:bg-[#C4FF4D]/5 transition-all text-left">
+                    <span class="font-bold text-gray-800">Банковская карта</span>
+                    <span class="material-symbols-outlined text-gray-400">credit_card</span>
+                </button>
+                <button onclick="alert('Упс! Оплата через PayPal временно на тех-работах!')" class="w-full flex items-center justify-between p-4 border-2 border-gray-150 rounded-2xl hover:border-[#C4FF4D] hover:bg-[#C4FF4D]/5 transition-all text-left">
+                    <span class="font-bold text-gray-800">PayPal</span>
+                    <span class="material-symbols-outlined text-gray-400">payments</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-payment-form" class="modal">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeModal('modal-payment-form')"></div>
+        <div class="relative bg-white rounded-3xl w-full max-w-md p-8 shadow-2xl z-10 border-t-8 border-[#bb001d]">
+            <button onclick="closeModal('modal-payment-form')" class="absolute top-5 right-5 text-gray-400 hover:text-black transition-colors">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <h2 class="text-2xl font-bold mb-6 text-center text-[#bb001d]">Данные карты</h2>
+            <form class="space-y-4 text-sm" onsubmit="event.preventDefault(); alert('Ура! Билеты успешно оплачены и летят на почту!'); closeModal('modal-payment-form');">
+                <div>
+                    <input type="text" placeholder="0000 0000 0000 0000" class="w-full p-4 border-2 border-gray-100 rounded-2xl outline-none focus:border-[#bb001d]" required maxlength="19">
+                </div>
+                <div class="flex gap-4">
+                    <input type="text" placeholder="ММ/ГГ" class="w-1/2 p-4 border-2 border-gray-100 rounded-2xl outline-none focus:border-[#bb001d]" required maxlength="5">
+                    <input type="password" placeholder="CVC" class="w-1/2 p-4 border-2 border-gray-100 rounded-2xl outline-none focus:border-[#bb001d]" required maxlength="3">
+                </div>
+                <button type="submit" class="w-full bg-[#bb001d] text-white font-bold py-4 rounded-2xl chunky-button text-base mt-2 hover:bg-[#990014] transition-colors">ОПЛАТИТЬ 45€ 🐾</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function nextStep(currentId, nextId) {
+            closeModal(currentId);
+            setTimeout(() => {
+                openModal(nextId);
+            }, 250);
+        }
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal').forEach(m => m.classList.remove('active'));
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+</html>
